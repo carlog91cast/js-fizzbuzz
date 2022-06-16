@@ -23,6 +23,10 @@ for (let i = 1; i <= 100; i++) {
     } else {
         console.log('index');
     }
+// aggiungo div e classi all'html
+
+    const frizzBox = document.createElement('div');
+    frizzBox.classlist.add('col-2', 'box')
 
 
 }
