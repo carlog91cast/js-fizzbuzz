@@ -10,10 +10,14 @@
 for (let i = 1; i <= 100; i++) {
     console.log(i);
     // determino con un operatore ogniqualvolta i sia multiplo di 3
-    if (i % 3 == 0 || i % 5 == 0) {
-        console.log('è multiplo di 3');
+    if (i % 3 == 0) {
+        console.log('Fizz');
+        // ...ogniqualvolta i sia multiplo di 5
+    } else if (i % 5 == 0) {
+        console.log('Buzz');
+        // ogniqualvolta i sia multiplo sia di 3 che di 5
+    } else if (i % 3 && i % 5) {
+        console.log('FizzBuzz')
     }
-    // } else if (i % 5 == 0) {
-    //     console.log('è multiplo di 5');
-    // }
+
 }
