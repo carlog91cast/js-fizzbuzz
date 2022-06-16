@@ -11,27 +11,31 @@ const numberFizzBuzz = document.getElementById('fizz-buzz');
 
 for (let i = 1; i <= 100; i++) {
     console.log(i);
+    const fizzBox = document.createElement('div');
+    fizzBox.classList.add("col-2", "box");
+    fizzBox.innerHTML = i;
     // determino con un operatore ogniqualvolta i sia multiplo di 3
     if (i % 3 == 0 && i % 5 == 0) {
         console.log('FizzBuzz');
         document.getElementById('fizz-buzz');
+        fizzBox.classList.add("fizz")
         // ...ogniqualvolta i sia multiplo di 5
     } else if (i % 3 == 0) {
         console.log('Fizz');
         document.getElementById('fizz-buzz');
+        fizzBox.classList.add("buzz")
         // ogniqualvolta i sia multiplo sia di 3 che di 5
     } else if (i % 5 == 0) {
         console.log('Buzz');
         document.getElementById('fizz-buzz');
+        fizzBox.classList.add("fizz-buzz")
     } else {
         console.log('index');
         document.getElementById('fizz-buzz');
     }
 // aggiungo div e classi all'html
 
-    const fizzBox = document.createElement('div');
-    fizzBox.classList.add("col-2", "box");
-    fizzBox.innerHTML = i;
+  
 
 // collego div, classi e conteuto al NumberFizzBuzz
 
