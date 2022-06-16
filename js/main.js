@@ -6,7 +6,8 @@
 
 // per il p.to 1 creo un for (ciclo) che mi permetta di stampare in console i numeri da 1 a 100
 // inizializzo una variabile a un ponendo index <= 100 cosi da ricomprendere i valori da 1 a 100 compreso; tutto quanto scritto nel primo blocco verrà ripetuto 100 volte fino all'esaurimento di quanto posto in condizione
-
+// determino una variabile per agganciarla all'id nell'html
+const NumberFrizzBuzz = document.getElementById('frizz.buzz');
 
 for (let i = 1; i <= 100; i++) {
     console.log(i);
@@ -20,7 +21,7 @@ for (let i = 1; i <= 100; i++) {
     } else if (i % 5 == 0) {
         console.log('Buzz');
     } else {
-        console.log('index')
+        console.log('index');
     }
 
 
