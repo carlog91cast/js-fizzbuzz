@@ -12,7 +12,9 @@ for (let i = 1; i <= 100; i++) {
     // determino con un operatore ogniqualvolta i sia multiplo di 3
     if (i % 3 == 0) {
         console.log('è multiplo di 3');
-    } else (i % 5 == 0)
+    } else (i % 5 == 0) {
+        console.log('è multiplo di 5');
+    }
 
 
 }
